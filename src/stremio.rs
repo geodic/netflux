@@ -44,6 +44,7 @@ pub fn serve(port: u16) -> Result<()> {
         types: vec!["movie".into(), "series".into()],
         id_prefixes: Some(vec!["tt".into()]),
         description: Some("Netflix, but free".into()),
+        logo: Some("https://raw.githubusercontent.com/geodic/netflux/main/assets/logo.png".into()),
         ..Scaffold::default_manifest()
     };
     let builder = Builder::new(manifest)
