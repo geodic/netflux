@@ -1,0 +1,63 @@
+name: Content Missing
+about: Report a show or movie that is available on Vidsrc but not in this addon
+labels: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Content Missing from Netflux
+        Please fill out the details below. Make sure you have checked the Vidsrc URL as described in the README.
+
+  - type: input
+    id: imdb_id
+    attributes:
+      label: IMDb ID
+      description: The IMDb ID of the show or movie (e.g. tt1234567)
+      placeholder: tt1234567
+    validations:
+      required: true
+
+  - type: input
+    id: type
+    attributes:
+      label: Type
+      description: Is this a movie or a series?
+      placeholder: movie or series
+    validations:
+      required: true
+
+  - type: input
+    id: season
+    attributes:
+      label: Season (for series only)
+      description: The season number (leave blank for movies)
+      placeholder: 1
+    validations:
+      required: false
+
+  - type: input
+    id: episode
+    attributes:
+      label: Episode (for series only)
+      description: The episode number (leave blank for movies)
+      placeholder: 1
+    validations:
+      required: false
+
+  - type: input
+    id: vidsrc_url
+    attributes:
+      label: Vidsrc URL
+      description: The exact Vidsrc URL you checked (see README for format)
+      placeholder: https://vidsrc.xyz/embed/movie/tt1234567
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any other information or context
+      placeholder: Anything else we should know?
+    validations:
+      required: false

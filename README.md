@@ -2,6 +2,16 @@
 
 A Stremio addon that provides streaming content. Built with Rust for high performance and reliability.
 
+This addon should be able to stream most English-language shows and movies. However, it is still in development.
+
+If you find that a show or movie is not available, please double-check its availability on the Vidsrc website:
+
+- For movies, go to: `https://vidsrc.xyz/embed/movie/<imdb_id>`
+- For series, go to: `https://vidsrc.xyz/embed/tv/<imdb_id>/<season>-<episode>`
+  - Example: For IMDb ID `tt1234567`, season 1, episode 2: `https://vidsrc.xyz/embed/tv/tt1234567/1-2`
+
+If it is available there but not in this addon, open an issue and include the IMDb ID (and season/episode for series) of the missing content.
+
 ## Features
 
 - Movie streaming support
@@ -86,3 +96,7 @@ MIT
 
 - Built with [Stremio Addon SDK](https://github.com/Stremio/stremio-addon-sdk)
 - Uses [headless_chrome](https://crates.io/crates/headless_chrome) for content fetching
+
+## Disclaimer
+
+This project is provided as-is, without any warranty. The author assumes no responsibility or liability for any use, misuse, or distribution of this software. By using this software, you agree that the author is not liable for any legal, civil, or criminal consequences that may arise from its use.
