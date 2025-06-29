@@ -52,7 +52,7 @@ pub fn serve(port: u16) -> Result<()> {
         .build();
     let options: ServerOptions = ServerOptions {
         port: port,
-        cache_max_age: 3600 * 24 * 3,
+        cache_max_age: 0,
         ip: Ipv4Addr::new(0, 0, 0, 0).into(),
     };
     serve_http(builder, options);
