@@ -1,3 +1,5 @@
+## I am archiving this repository in favor of better addons such as [Nuvio Streams](https://nuviostreams.hayd.uk/)
+
 # Netflux
 
 A Stremio addon that provides streaming content. Built with Rust for high performance and reliability.
